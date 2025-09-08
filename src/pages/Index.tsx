@@ -1,12 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Suspense } from "react";
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import Features from "@/components/Features";
+import ArtisanShowcase from "@/components/ArtisanShowcase";
+import AiStoryGenerator from "@/components/AiStoryGenerator";
+import Footer from "@/components/Footer";
+import CraftScene from "@/components/3d/CraftScene";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      {/* 3D Background Scene */}
+      <Suspense fallback={null}>
+        <CraftScene />
+      </Suspense>
+      
+      {/* Navigation */}
+      <Navigation />
+      
+      {/* Main Content */}
+      <main className="relative">
+        <Hero />
+        <Features />
+        <ArtisanShowcase />
+        <AiStoryGenerator />
+      </main>
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
