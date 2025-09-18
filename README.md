@@ -58,10 +58,10 @@ Visually demonstrates how an artisan's simple smartphone photo can be enhanced w
 Our application features a clean, intuitive, and fully responsive user interface designed to be accessible to artisans of all technical skill levels.
 
 #### The Artisan Workspace - The heart of CraftAI
-[ADD SCREENSHOT OF YOUR WORKSPACE.TSX PAGE HERE]
+[![Alt Text](D:\artisan-ai-mentor\src\assets\workspace.jpg)]
 
 #### Simple Onboarding for Artisans
-[ADD SCREENSHOT OF YOUR JOINASARTISAN.TSX PAGE HERE]
+[![Alt Text](D:\artisan-ai-mentor\src\assets\join as artisan.jpg)]
 
 ## 5. Tech Stack & Architecture
 Our solution is built on a modern, scalable, and secure technology stack, with Google Cloud's generative AI at its core.
