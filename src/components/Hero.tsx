@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+// Corrected the import paths to be relative, which is more robust.
 import { HeroButton } from "./ui/hero-button";
 import { Sparkles, Users, TrendingUp, Heart } from "lucide-react";
-import heroImage from "@/assets/pottery-hero.jpg";
+import heroImage from "../assets/pottery-hero.jpg";
 
 export default function Hero() {
   return (
@@ -32,10 +34,13 @@ export default function Hero() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <HeroButton variant="primary" size="lg" className="floating-animation">
-                Start Your Journey
-                <Sparkles className="w-5 h-5" />
-              </HeroButton>
+              {/* This button is now wrapped in a Link to navigate to the 'join' page */}
+              <Link to="/join">
+                <HeroButton variant="primary" size="lg" className="floating-animation">
+                  Start Your Journey
+                  <Sparkles className="w-5 h-5" />
+                </HeroButton>
+              </Link>
               <HeroButton variant="outline" size="lg">
                 Explore Artisans
                 <Users className="w-5 h-5" />
@@ -101,3 +106,4 @@ export default function Hero() {
     </section>
   );
 }
+

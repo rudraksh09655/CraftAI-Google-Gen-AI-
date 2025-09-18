@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X, Sparkles, Users, Palette, MessageSquare } from "lucide-react";
-import { HeroButton } from "./ui/hero-button";
+// Corrected the import path to use the '@/' alias
+import { HeroButton } from "@/components/ui/hero-button";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,12 +44,16 @@ export default function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <HeroButton variant="ghost" size="sm">
-              Sign In
-            </HeroButton>
-            <HeroButton variant="primary" size="sm">
-              Join as Artisan
-            </HeroButton>
+            <Link to="/signin">
+              <HeroButton variant="ghost" size="sm">
+                Sign In
+              </HeroButton>
+            </Link>
+            <Link to="/join">
+              <HeroButton variant="primary" size="sm">
+                Join as Artisan
+              </HeroButton>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -74,12 +80,16 @@ export default function Navigation() {
               </a>
             ))}
             <div className="pt-4 space-y-2">
-              <HeroButton variant="ghost" size="sm" className="w-full justify-center">
-                Sign In
-              </HeroButton>
-              <HeroButton variant="primary" size="sm" className="w-full justify-center">
-                Join as Artisan
-              </HeroButton>
+              <Link to="/signin" onClick={() => setIsOpen(false)}>
+                <HeroButton variant="ghost" size="sm" className="w-full justify-center">
+                  Sign In
+                </HeroButton>
+              </Link>
+              <Link to="/join" onClick={() => setIsOpen(false)}>
+                <HeroButton variant="primary" size="sm" className="w-full justify-center">
+                  Join as Artisan
+                </HeroButton>
+              </Link>
             </div>
           </div>
         )}
@@ -87,3 +97,4 @@ export default function Navigation() {
     </nav>
   );
 }
+
