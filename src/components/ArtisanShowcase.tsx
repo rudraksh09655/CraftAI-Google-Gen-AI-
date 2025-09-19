@@ -3,6 +3,7 @@ import { HeroButton } from "./ui/hero-button";
 import { Star, MapPin, Calendar, ExternalLink } from "lucide-react";
 import weavingArtisan from "@/assets/weaving-artisan.jpg";
 import jewelryCraft from "@/assets/jewelry-craft.jpg";
+import potteryArtisan from "@/assets/pottery-hero.jpg";
 
 export default function ArtisanShowcase() {
   const artisans = [
@@ -40,7 +41,7 @@ export default function ArtisanShowcase() {
       experience: "30 years",
       rating: 4.9,
       reviews: 156,
-      image: "/api/placeholder/400/300",
+      image: potteryArtisan,
       description: "Renowned potter known for creating beautiful terracotta sculptures and functional pottery.",
       price: "₹500 - ₹25,000",
       specialties: ["Terracotta Sculptures", "Traditional Pots", "Decorative Items"]
