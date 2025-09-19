@@ -58,10 +58,10 @@ Visually demonstrates how an artisan's simple smartphone photo can be enhanced w
 Our application features a clean, intuitive, and fully responsive user interface designed to be accessible to artisans of all technical skill levels.
 
 #### The Artisan Workspace - The heart of CraftAI
-[ADD SCREENSHOT OF YOUR WORKSPACE.TSX PAGE HERE]
+![Alt Text](src/assets/workspace.jpg)
 
 #### Simple Onboarding for Artisans
-[ADD SCREENSHOT OF YOUR JOINASARTISAN.TSX PAGE HERE]
+![Alt Text](src/assets/joinasartisan.jpg)
 
 ## 5. Tech Stack & Architecture
 Our solution is built on a modern, scalable, and secure technology stack, with Google Cloud's generative AI at its core.
@@ -79,7 +79,7 @@ Our solution is built on a modern, scalable, and secure technology stack, with G
 
 ### Architecture Diagram
 Our serverless architecture is designed to be highly cost-effective, ensuring that costs only scale as the platform's usage grows.
-[ADD YOUR ARCHITECTURE DIAGRAM IMAGE HERE]
+![Alt Text](src/assets/architecture.jpg)
 
 ## 6. Getting Started: How to Run Locally
 To run this project on your local machine, you will need two terminals.
