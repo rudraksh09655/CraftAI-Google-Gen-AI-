@@ -4,7 +4,7 @@ CraftAI is an empowerment engine for Indian artisans. It's an AI co-pilot that b
 A submission for the Gen AI Exchange Hackathon.
 
 # Quick Links
-### Live Prototype Link: [ADD YOUR DEPLOYED FRONTEND URL HERE]
+### Live Prototype Link: [https://craftai-frontend-566280453759.asia-south2.run.app/]
 
 ### Demo Video: [ADD YOUR YOUTUBE/GOOGLE DRIVE DEMO VIDEO URL HERE]
 
